@@ -1,231 +1,282 @@
 /* Dark Theme */
 :root {
-	--low-dark: #222222;
-	--high-dark: #333333;
-	--low-light: #CCCCCC;
-	--high-light: #FFFFFF;
+  --low-dark: #222222;
+  --high-dark: #333333;
+  --low-light: #cccccc;
+  --high-light: #ffffff;
 }
 
 /* Atom Theme */
 :root {
-	--low-dark: #21252B;
-	--high-dark: #282C34;
+  --low-dark: #21252b;
+  --high-dark: #282c34;
 }
 
 body {
-	background-color: #333333;
+  background-color: #333333;
 }
 
 body#fountain-js section#workspace #script.full_width {
-	width: 100%;
+  width: 100%;
 }
 
-body p{
-	line-height: 20px!important;
+body p {
+  line-height: 20px !important;
 }
 
 .container {
-	width: 100%;
-	max-width: 850px;
+  width: 100%;
+  max-width: 850px;
 }
 
 .toolbar {
-	position: fixed;
-	z-index: 201;
-	top: 0;
+  position: fixed;
+  z-index: 201;
+  top: 0;
 }
 
 #workspace #script {
-	margin: 50px auto 0 auto;
-	overflow: hidden;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
 }
 
 #workspace #script.dpi100 .page {
-	padding: 100px 100px 100px 100px;
+  padding: 100px 100px 100px 100px;
 }
 
 @media (max-width: 850px) {
-	#workspace #script {
-		width: auto!important;
-	}
-	#workspace #script.dpi100 .page {
-		padding: 100px 10% 100px 10%;
-	}
+  #workspace #script {
+    width: auto !important;
+  }
+  #workspace #script.dpi100 .page {
+    padding: 100px 10% 100px 10%;
+  }
 }
 
 @media (max-width: 600px) {
-	#workspace #script .page div.dialogue {
-		width: 100%;
-	}
+  #workspace #script .page div.dialogue {
+    width: 100%;
+  }
 }
 
 #workspace #script .title-page h1 {
-	margin-top: 300px;
+  margin-top: 300px;
 }
 
 #workspace #script .page div.dialogue h4 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #workspace #script .page h3 {
-	font-weight: bold!important;
-	color: #008000;
-	text-decoration: underline;
+  font-weight: bold !important;
+  color: #008000;
+  text-decoration: underline;
 }
 
 #workspace #script .script-page h3::before {
-	color: #000000;
-	content: attr(data-index) ".";
+  color: #000000;
+  content: attr(data-index) ".";
 }
 
 #workspace #script .script-page h3::after {
-	color: inherit;
-	content: attr(data-index) ".";
-	display: none;
+  color: inherit;
+  content: attr(data-index) ".";
+  display: none;
 }
 
 .toc-page ol {
-	font-size: 17px;
-	font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 #workspace #script .toc-page h3 {
-	color: black;
+  color: black;
 }
 
 #toc a {
-	color: #008000;
+  color: #008000;
 }
 
 #toc-stats a {
-	color: #000080;
+  color: #000080;
 }
 
 #filter {
-	max-width: 6em;
+  max-width: 6em;
 }
 
 #stats-filter {
-	display:flex;
-	justify-content: space-between;
-	font-family: "Lucida Sans Unicode", "sans-serif";
-	margin-bottom: 2em;
-	font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans Unicode", "sans-serif";
+  margin-bottom: 2em;
+  font-size: 14px;
 }
 
 #characters_per_minutes {
-	line-height: 23px;
+  line-height: 23px;
 }
 
 .charts {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 /* Dark Theme */
 .dark-theme .toolbar {
-	background: var(--low-dark);
+  background: var(--low-dark);
 }
 
 .dark-theme #workspace #script .page {
-	background: var(--high-dark);
-	border: 1px black solid;
-	color: var(--low-light);
+  background: var(--high-dark);
+  border: 1px black solid;
+  color: var(--low-light);
 }
 
 body.dark-theme {
-	background-color: var(--low-dark);
+  background-color: var(--low-dark);
 }
 
 .dark-theme #workspace #script .page .highcharts-background {
-	fill: var(--high-dark);
+  fill: var(--high-dark);
 }
 
 .dark-theme #workspace #script .page .highcharts-point {
-	stroke: var(--high-dark);
+  stroke: var(--high-dark);
 }
 
 .dark-theme #workspace #script .page #stats-sequences .highcharts-point {
-	stroke-width: 0;
+  stroke-width: 0;
 }
 
 .dark-theme #workspace #script .page .highcharts-axis-labels text {
-	fill: var(--low-light)!important;
+  fill: var(--low-light) !important;
 }
 
-.dark-theme #workspace #script .page .highcharts-data-label text tspan, .dark-theme #workspace #script .highcharts-title tspan {
-	fill: var(--high-light);
+.dark-theme #workspace #script .page .highcharts-data-label text tspan,
+.dark-theme #workspace #script .highcharts-title tspan {
+  fill: var(--high-light);
 }
 
-.dark-theme #workspace #script .page .highcharts-data-label text tspan.highcharts-text-outline {
-	display: none;
+.dark-theme
+  #workspace
+  #script
+  .page
+  .highcharts-data-label
+  text
+  tspan.highcharts-text-outline {
+  display: none;
 }
 
-.dark-theme #workspace #script .page.toc-page h3, .dark-theme #workspace #script .script-page h3::before {
-	color: var(--low-light);
+.dark-theme #workspace #script .page.toc-page h3,
+.dark-theme #workspace #script .script-page h3::before {
+  color: var(--low-light);
 }
 
 .dark-theme .toolbar {
-	border-bottom: 1px black solid;
-	/*box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);*/
+  border-bottom: 1px black solid;
+  /*box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.5);*/
 }
 
-#fountain-js #workspace #script .title-page h1, .clicked {
-	font-weight:bold;
+#fountain-js #workspace #script .title-page h1,
+.clicked {
+  font-weight: bold;
 }
 
 #workspace #script .page span.italic {
-	background: yellow;
+  background: yellow;
 }
 
 .dark-theme #workspace #script .page span.italic {
-	background: purple;
+  background: purple;
 }
 
 #toolbar li:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 svg {
-	fill: white;
+  fill: white;
 }
 
 #toolbar span {
-	display:none;
+  display: none;
 }
 
 /* Tooltip text */
 /* https://www.w3schools.com/css/css_tooltip.asp */
 #toolbar li span {
-	visibility: hidden;
-	width: auto;
-	white-space:  nowrap;
-	background-color: #ED303C;
-	color: #fff;
-	text-align: center;
-	padding: 5px 5px;
-	border-radius: 4px;
-	position: absolute;
-	top: 28px;
-	left: calc(100% - 50px);
-	z-index: 1;
+  visibility: hidden;
+  width: auto;
+  white-space: nowrap;
+  background-color: #ed303c;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 28px;
+  left: calc(100% - 50px);
+  z-index: 1;
 }
 
 #toolbar li:hover span {
-	visibility: visible;
+  visibility: visible;
 }
 
 #fountain-js #workspace #script .clicked p {
-	font-weight:bold;
+  font-weight: bold;
 }
 
-.script-page > p { /* Description */
+.script-page > p {
+  /* Description */
   font-style: italic;
 }
 
-.dialogue + p { /* Paragraph after dialogue */
-	margin-top: 2em;
+.dialogue + p {
+  /* Paragraph after dialogue */
+  margin-top: 2em;
 }
 
 #file-api:hover {
-	cursor: pointer;
+  cursor: pointer;
+}
+
+@media print {
+  * {
+    box-shadow: unset !important;
+  }
+
+  #workspace #script .page {
+    border: unset !important;
+  }
+
+  header.toolbar {
+    display: none;
+  }
+
+  #page-stats {
+    display: none;
+  }
+  .page-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  h3 {
+    break-after: avoid;
+  }
+
+  .dialogue,
+  p {
+    break-inside: avoid;
+  }
+
+  .page {
+    break-after: page;
+  }
+
+  #workspace #script .page h3,
+  a {
+    color: black !important;
+  }
 }
